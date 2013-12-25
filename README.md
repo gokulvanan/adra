@@ -1,4 +1,4 @@
 adra
 ====
 
-A Nodejs Event driven and distributed processing framework (WIP)
+A Nodejs Event driven and distributed processing framework (Incubation)

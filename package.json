@@ -1,0 +1,37 @@
+{
+  "author": "Gokulvanan <gokulvanan@gmail.com> ",
+  "name": "adra",
+  "description": "A distributed non-blocking processing framework in nodejs (Currently under incubation)",
+  "version": "0.0.1-alpha0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gokulvanan/adra"
+  },
+  "bin" : {
+    "adra":"./bin/adra"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "async": "0.2.9",
+    "memcached": "0.2.5",
+    "mysql": "2.0.0-alpha9",
+    "commander": "2.0.0",
+    "underscore":"1.5.2",
+    "ncp":"0.4.2",
+    "winston":"0.7.2",
+    "mongodb":"1.3.19",
+    "nodemailer":"0.5.5",
+    "nodeunit":"0.8.2"
+  },
+  "licenses":[
+   {
+     "type": "MIT"
+   }
+  ],
+  "keywords":["distributed","evendriven","nonblocking"],
+  "devDependencies": {
+  },
+  "optionalDependencies": {}
+}
