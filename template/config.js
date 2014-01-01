@@ -9,8 +9,24 @@ return {
     // mode in which adra should be run 
     // possible options are simple and cluster modes
     mode: "simple", 
-    // relative or absloute path to workders folder that hold workers js
-    workers: "workers",
+    workers:{
+      // relative or absloute path to workders folder that hold workers js
+      path:"workers",
+      config:{
+        start:{
+          instances:1
+        },
+        extract:{
+          instances:1
+        },
+        transform:{
+          instances:1
+        },
+        load:{
+          instances:1
+        }
+      }
+    },
     //db configurations for mysql database connection
     db: {
       default:{

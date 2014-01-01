@@ -7,10 +7,7 @@ module.exports = function(){
   return {
     start:{
       instances:1,
-      childreen: ["logger","extractor"]
-    },
-    logger:{
-      instances:2,
+      childreen: ["extractor"]
     },
     extract:{
       instances:2,
