@@ -15,15 +15,17 @@ module.exports = function(ctx){
     onMsg: function(msg,from){
       console.log(" in extractor");
       console.log(msg);
-      var transformer = ctx.getChild("transform");
-      transformer.send({ data : "sample data here"});
+      var transformer = ctx.getWorker("transform");
+      ctx.send({
+        to:"transform",
+        msg:{
+          data : "sample data here"
+        }
+      });
     },
     onErr: function(msg,from){
       console.log(" in error handler for childreen of extractor");
       ctx.restart(from);
-      //ctx.stop(from);
-      //ctx.start(from)
-      //ctx.shutdown();
     }
   }
 }
